@@ -1,5 +1,3 @@
-library(survival)
-
 lr.test <- function(dN1, dN2, Y1, Y2){
   test.stat.num <- as.numeric((Y2/(Y1+Y2)) %*% dN1 - (Y1/(Y1+Y2)) %*% dN2)
   test.stat.denom <- as.numeric((Y2^2/(Y1+Y2)^2 ) %*% dN1 + (Y1^2/(Y1+Y2)^2) %*% dN2)
